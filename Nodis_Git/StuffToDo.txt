@@ -1,0 +1,10 @@
+List to keep track of outstanding issues, may migrate this to a ticket website if we need to
+
+### Debug Notes ###
+I had to remove the knob js bc it wasn't working from the janux/custom.js
+http://anthonyterrien.com/demo/knob/
+
+
+
+User dashboard
+Figure out embedding docusign in document

@@ -107,7 +107,7 @@ def activate(request, uidb64, token):
         user.profile.email_confirmed = True
         user.save()
         login(request, user)
-        return redirect('home')
+        return redirect('Dashboard')
     else:
         return render(request, 'app/account_activation_invalid.html')
 
@@ -122,3 +122,14 @@ def account_activation_sent(request):
             'year':datetime.now().year,
         }
     )
+
+def dashboard(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    print(request.user)
+    if request.user.is_authenticated():
+        return render(request, 'app/LoggedIn/Dashboard.html')
+    else:
+        return render(request, 'app/login.html')
+
+   

@@ -14,6 +14,11 @@ import app.views
 # from django.contrib import admin
 # admin.autodiscover()
 
+
+## Add redirection for already logged in users when I have time ##
+# url(r'^login/', auth_views.LoginView.as_view(redirect_authenticated_user=True), name='login'),
+
+
 urlpatterns = [
     # Examples:
     url(r'^$', app.views.home, name='home'),
@@ -45,6 +50,12 @@ urlpatterns = [
         app.views.activate, name='activate'),
     url(r'^signup/$', app.views.signup, name='signup'),
     ######################################
+
+    ######### Logged in Routes ###########
+    url(r'^dashboard$', app.views.dashboard, name='Dashboard'),
+    ######################################
+
+
 
 
     # Uncomment the admin/doc line below to enable admin documentation:
