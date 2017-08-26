@@ -162,6 +162,7 @@
     <Content Include="app\templates\app\layout.html" />
     <Content Include="app\templates\app\login.html" />
     <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.html">
