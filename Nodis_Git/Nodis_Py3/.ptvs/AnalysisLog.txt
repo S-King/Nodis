@@ -3643,3 +3643,7 @@ System.FormatException: Input string was not in a correct format.
 2017-08-26T13:08:51: Saving group "c:\users\toortik\source\repos\nodis_git\nodis_git\nodis_py3\lib\site-packages\pytz"
 2017-08-26T13:08:51: End of group "c:\users\toortik\source\repos\nodis_git\nodis_git\nodis_py3\lib\site-packages\pytz"
 2017-08-26T13:08:52: Deleting 0 files
+
+2017-08-26T14:48:07: Start analysis
+2017-08-26T14:48:07: IncludeModulesFromModulePath = win32com
+2017-08-26T14:48:08: Deleting 0 files

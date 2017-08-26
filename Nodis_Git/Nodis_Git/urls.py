@@ -17,7 +17,7 @@ import app.views
 urlpatterns = [
     # Examples:
     url(r'^$', app.views.home, name='home'),
-    url(r'^template$', app.views.home, name='template'),
+    url(r'^template$', app.views.template, name='template'),
     url(r'^contact$', app.views.contact, name='contact'),
     url(r'^about', app.views.about, name='about'),
     url(r'^login/$',
@@ -38,6 +38,14 @@ urlpatterns = [
             'next_page': '/',
         },
         name='logout'),
+
+    ######### Account Activation #########
+    url(r'^account_activation_sent$', app.views.account_activation_sent, name='account_activation_sent'),
+    url(r'^activate/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
+        app.views.activate, name='activate'),
+    url(r'^signup/$', app.views.signup, name='signup'),
+    ######################################
+
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

@@ -28,6 +28,16 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Email backend for sign up confirmation emails
+# !! This will need to be updated to an email service for a production server !!
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # Use this to print emails to console only
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'spencer.d.king2@gmail.com'
+EMAIL_HOST_PASSWORD = 'Bounder114'
+EMAIL_PORT = 587
+
 
 # Application definition
 
