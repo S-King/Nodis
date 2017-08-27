@@ -1,7 +1,8 @@
 ﻿{% extends 'app/layout.html' %}
 
 {% block content %}
-  <h2>Sign up</h2>
+  <h2>Sign Up</h2>
+  <p> Its Free!</p>
   <form method="post">
     {% csrf_token %}
     {% for field in form %}
