@@ -40,7 +40,6 @@
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
     <Compile Include="app\migrations\__init__.py" />
-    <Compile Include="EmbeddedSigningExample.py" />
     <Compile Include="manage.py" />
     <Compile Include="Nodis_Git\__init__.py" />
     <Compile Include="Nodis_Git\settings.py" />
@@ -292,7 +291,6 @@
     <Content Include="app\templates\app\signup.html" />
     <Content Include="app\templates\app\account_activation_email.html" />
     <Content Include="app\templates\app\account_activation_invalid.html" />
-    <Content Include="DocusignAPINotes.txt" />
     <Content Include="Removed\KnobGraphs.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
