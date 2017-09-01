@@ -53,6 +53,7 @@ urlpatterns = [
 
     ######### Logged in Routes ###########
     url(r'^dashboard$', app.views.dashboard, name='Dashboard'),
+    url(r'^account$', app.views.account, name='Account'),
     ######################################
 
 

@@ -124,7 +124,7 @@ def account_activation_sent(request):
     )
 
 def dashboard(request):
-    """Renders the home page."""
+    """Renders the user dashboard """
     assert isinstance(request, HttpRequest)
     print(request.user)
     if request.user.is_authenticated():
@@ -133,3 +133,11 @@ def dashboard(request):
         return render(request, 'app/login.html')
 
    
+def account(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    print(request.user)
+    if request.user.is_authenticated():
+        return render(request, 'app/LoggedIn/Account.html')
+    else:
+        return render(request, 'app/login.html')
