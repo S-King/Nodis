@@ -10,6 +10,6 @@ XML_PARAM_ENTITY_PARSING_UNLESS_STANDALONE
 model
 EXPAT_VERSION
 ExpatError
-errors
 ErrorString
+errors
 version_info

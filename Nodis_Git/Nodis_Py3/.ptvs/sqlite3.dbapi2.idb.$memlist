@@ -21,7 +21,7 @@ SQLITE_UPDATE
 SQLITE_TRANSACTION
 SQLITE_DROP_TEMP_TRIGGER
 SQLITE_DROP_TEMP_VIEW
-version
+SQLITE_IGNORE
 OptimizedUnicode
 Statement
 collections
@@ -29,8 +29,8 @@ version_info
 Binary
 OperationalError
 adapt
+DateFromTicks
 SQLITE_CREATE_VIEW
-SQLITE_DROP_TABLE
 SQLITE_ANALYZE
 SQLITE_CREATE_TRIGGER
 SQLITE_DROP_TEMP_INDEX
@@ -50,8 +50,8 @@ time
 Warning
 SQLITE_CREATE_TEMP_TRIGGER
 InternalError
-SQLITE_IGNORE
 len
+version
 SQLITE_SELECT
 TimestampFromTicks
 register_adapters_and_converters
@@ -68,7 +68,7 @@ PrepareProtocol
 SQLITE_CREATE_TEMP_TABLE
 SQLITE_INSERT
 Row
-DateFromTicks
+SQLITE_DROP_TABLE
 SQLITE_REINDEX
 ProgrammingError
 Error

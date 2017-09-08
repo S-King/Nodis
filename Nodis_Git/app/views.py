@@ -17,6 +17,8 @@ from django.contrib.auth import login, authenticate
 from django.contrib.auth.models import User
 ###########################
 
+
+
 def home(request):
     """Renders the home page."""
     assert isinstance(request, HttpRequest)
@@ -44,6 +46,9 @@ def contact(request):
 
 def about(request):
     """Renders the about page."""
+    #execfile('module3.py')
+    exec(open('googledrivetest.py', "rb").read())
+
     assert isinstance(request, HttpRequest)
     return render(
         request,
